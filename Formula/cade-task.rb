@@ -3,7 +3,9 @@ class CadeTask < Formula
 
   desc "Dirty wrapper around reminders-cli"
   homepage "https://github.com/cadeef/cade-task"
-  # TODO: Add stable source package
+  license "MIT"
+  url "https://github.com/cadeef/cade-task/archive/v0.1.0.tar.gz"
+  sha256 "e53f6935f0983d09aa38bd3e3cb4d6c8266dab5ac354fc0d723ba0aeffa55667"
   head "https://github.com/cadeef/cade-task.git", branch: "main"
 
   depends_on "python@3.9"
@@ -27,5 +29,8 @@ class CadeTask < Formula
     virtualenv_install_with_resources
   end
 
-  # TODO: Add your package's tests
+  test do
+    # FIXME: Add a proper test
+    system "true"
+  end
 end
