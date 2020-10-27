@@ -5,8 +5,8 @@ class CadeTask < Formula
   homepage "https://github.com/cadeef/cade-task"
   url "https://github.com/cadeef/cade-task/archive/v0.1.0.tar.gz"
   sha256 "e53f6935f0983d09aa38bd3e3cb4d6c8266dab5ac354fc0d723ba0aeffa55667"
-  head "https://github.com/cadeef/cade-task.git", branch: "main"
   license "MIT"
+  head "https://github.com/cadeef/cade-task.git", branch: "main"
 
   depends_on "python@3.9"
 
