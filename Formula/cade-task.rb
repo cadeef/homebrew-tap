@@ -3,26 +3,27 @@ class CadeTask < Formula
 
   desc "Dirty wrapper around reminders-cli"
   homepage "https://github.com/cadeef/cade-task"
-  url "https://github.com/cadeef/cade-task/archive/v0.1.0.tar.gz"
-  sha256 "e53f6935f0983d09aa38bd3e3cb4d6c8266dab5ac354fc0d723ba0aeffa55667"
+  url "https://github.com/cadeef/cade-task/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "40b44f0cecd58a87aaea521b627c73086113770d7509598bcf0f12f95a606456"
   license "MIT"
   head "https://github.com/cadeef/cade-task.git", branch: "main"
 
-  depends_on "python@3.9"
+  depends_on "cmake" => :build
+  depends_on "python@3.11"
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz#sha256=d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"
-    sha256 "d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"
+    url "https://files.pythonhosted.org/packages/59/87/84326af34517fca8c58418d148f2403df25303e02736832403587318e9e8/click-8.1.3.tar.gz"
+    sha256 "7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e"
   end
 
   resource "tablib" do
-    url "https://files.pythonhosted.org/packages/cf/1a/6c033d742f544c192b55093ae927d9ad52d7e290ac06ac9fe6f94239d5f9/tablib-2.0.0.tar.gz#sha256=8cc2fa10bc37219ac5e76850eb7fbd50de313c7a1a7895c44af2a8dd206b7be7"
-    sha256 "8cc2fa10bc37219ac5e76850eb7fbd50de313c7a1a7895c44af2a8dd206b7be7"
+    url "https://files.pythonhosted.org/packages/95/6a/d62bb27ecd6371cd10fc7f68fa9b06cf46e4771582f2aae94fb56c24add7/tablib-3.5.0.tar.gz"
+    sha256 "f6661dfc45e1d4f51fa8a6239f9c8349380859a5bfaa73280645f046d6c96e33"
   end
 
   resource "tabulate" do
-    url "https://files.pythonhosted.org/packages/57/6f/213d075ad03c84991d44e63b6516dd7d185091df5e1d02a660874f8f7e1e/tabulate-0.8.7.tar.gz#sha256=db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"
-    sha256 "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"
+    url "https://files.pythonhosted.org/packages/ec/fe/802052aecb21e3797b8f7902564ab6ea0d60ff8ca23952079064155d1ae1/tabulate-0.9.0.tar.gz"
+    sha256 "0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c"
   end
 
   def install
