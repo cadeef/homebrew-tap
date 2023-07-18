@@ -3,13 +3,13 @@ class CadeTask < Formula
 
   desc "Dirty wrapper around reminders-cli"
   homepage "https://github.com/cadeef/cade-task"
-  url "https://github.com/cadeef/cade-task/archive/refs/tags/v0.1.1_1.tar.gz"
-  sha256 "ac18d5f6ca1f264379f281ea56c383c843994c876a188bb3a3fd213733e633be"
+  url "https://github.com/cadeef/cade-task/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "68681f6c37c54a69698c1556a02be85a9be77deb054efcb00b1dcaba392f198e"
   license "MIT"
   head "https://github.com/cadeef/cade-task.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/cadeef/homebrew-tap/releases/download/cade-task-0.1.1"
+    root_url "https://github.com/cadeef/homebrew-tap/releases/download/cade-task-0.2.0"
     sha256 cellar: :any_skip_relocation, monterey: "f739a6fe296be56e6d779041729c8a582df4e9d870113f46c7472413b9192c80"
   end
 
